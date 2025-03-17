@@ -65,6 +65,76 @@
             font-size: 1.2rem;
             margin-bottom: 30px;
         }
+        /* Buttons */
+        .btn-custom {
+            padding: 12px 25px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            border-radius: 30px;
+            transition: 0.3s;
+            border: none;
+        }
+        .btn-primary {
+            background: #ffcc00;
+            color: #000;
+        }
+        .btn-primary:hover {
+            background: #e6b800;
+            color: #000;
+        }
+        .btn-success {
+            background: #28a745;
+        }
+        .btn-success:hover {
+            background: #218838;
+        }
+        .btn-warning {
+            background: #ff5722;
+        }
+        .btn-warning:hover {
+            background: #e64a19;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="/">Sobha City Mall</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/customers/">Manage Customers</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/employees/">Manage Employees</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/shops/">Manage Shops</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content text-center">
+            <h1>Welcome to Sobha City Mall</h1>
+            <p>Effortlessly manage customers, employees, and shops in one place.</p>
+            <div>
+                <a href="/customers/" class="btn btn-primary btn-custom m-2">Manage Customers</a>
+                <a href="/employees/" class="btn btn-success btn-custom m-2">Manage Employees</a>
+                <a href="/shops/" class="btn btn-warning btn-custom m-2">Manage Shops</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
+
 
 
 
