@@ -10,87 +10,13 @@
 
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-
-
-    <h1>Sobha City Mall</h1>
-
-    <!-- Customer Management -->
-    <h2>Manage Customers</h2>
-    <label for="customerName">Customer Name:</label>
-    <input type="text" id="customerName">
-    <button onclick="addCustomer()">Add Customer</button>
-    
-    <h3>Customer List</h3>
-    <table border="1">
-        <tr>
-            <th>Name</th>
-        </tr>
-        <tbody id="customerTable"></tbody>
-    </table>
-    <!-- Employee Management -->
-    <h2>Manage Employees</h2>
-    <label for="employeeName">Employee Name:</label>
-    <input type="text" id="employeeName">
-    <button onclick="addEmployee()">Add Employee</button>
-    
-    <h3>Employee List</h3>
-    <table border="1">
-        <tr>
-            <th>Name</th>
-        </tr>
-        <tbody id="employeeTable"></tbody>
-    </table>
-    <!-- Shop Management -->
-    <h2>Manage Shops</h2>
-    <label for="shopName">Shop Name:</label>
-    <input type="text" id="shopName">
-    <button onclick="addShop()">Add Shop</button>
-
-    <h3>Shop List</h3>
-    <table border="1">
-        <tr>
-            <th>Name</th>
-        </tr>
-        <tbody id="shopTable"></tbody>
-    </table>
-
-    <script>
-        function addCustomer() {
-            let name = document.getElementById("customerName").value;
-            {
-                let row = document.createElement("tr");
-                row.innerHTML = `<td>${name}</td>`;
-                document.getElementById("customerTable").appendChild(row);
-                document.getElementById("customerName").value = "";
-            }
+    <!-- Custom Styles -->
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(to right, #ff9a9e, #fad0c4);
+            color: #fff;
         }
-
-        function addEmployee() {
-            let name = document.getElementById("employeeName").value;
-            {
-                let row = document.createElement("tr");
-                row.innerHTML = `<td>${name}</td>`;
-                document.getElementById("employeeTable").appendChild(row);
-                document.getElementById("employeeName").value = "";
-            }
-        }
-
-        function addShop() {
-            let name = document.getElementById("shopName").value;
-            {
-                let row = document.createElement("tr");
-                row.innerHTML = `<td>${name}</td>`;
-                document.getElementById("shopTable").appendChild(row);
-                document.getElementById("shopName").value = "";
-            }
-        }
-    </script>
-
-</body>
-</html>
 
 
     
-         
-           
-       
